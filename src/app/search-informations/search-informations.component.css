@@ -1,0 +1,27 @@
+
+.main-container{
+
+}
+
+.search-information-input{
+    border: 1px solid purple;
+}
+
+.form-group{
+    border: 1px solid green;
+}
+
+.detail-input{
+    border: 1px solid blue;
+    display: grid;
+    margin: 5% 0% 1% 10%;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 80%;
+    margin: 0% 0% 0% 10%;
+    font-size: 48px;
+    color: #999999;
+    font-weight: bold;
+}
