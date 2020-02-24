@@ -25,3 +25,16 @@
     color: #999999;
     font-weight: bold;
 }
+
+.container-search-results{
+    border: 1px solid yellow;
+    padding: 0% 10% 0% 10%;
+}
+
+.search-results{
+    border: 1px solid pink;
+}
+
+.album-view{
+    border: 1px solid red;
+}

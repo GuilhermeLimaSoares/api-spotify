@@ -1,0 +1,25 @@
+.main-album-view{
+    border: 1px solid aqua;
+    /* padding: 0% 10% 0 10%; */
+    width: 19%;
+}
+
+.container-img{
+    border: 1px solid orange;
+    width: 135px;
+    height: 130px;
+    margin: 0 11%;
+}
+
+.album-detail{
+    width: 78%;
+    margin: 0 11%;
+}
+
+.album-detail ul {
+    list-style-type: none;
+    border: 1px solid white;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
