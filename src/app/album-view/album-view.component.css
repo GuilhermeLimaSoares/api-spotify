@@ -1,7 +1,9 @@
 .main-album-view{
     border: 1px solid aqua;
+    width: 175px;
+    height: 230px;
     /* padding: 0% 10% 0 10%; */
-    width: 19%;
+    /* width: 19%; */
 }
 
 .container-img{
