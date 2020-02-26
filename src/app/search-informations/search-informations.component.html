@@ -3,7 +3,7 @@
         <form>
             <div class="form-group">
                 <label class="detail-input">Busque por artistas, álbuns ou músicas</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comece a escrever...">
+                <input type="text" class="form-control" placeholder="Comece a escrever..." [(ngModel)]="value" name="name">
             </div>
         </form>
     </div>
@@ -12,7 +12,7 @@
         <div class="search-results">
             <p>Resultados encontrados para "Bob"</p>
         </div>
-        <div class="album-view">
+        <div class="album-view" (click)="getDetails()">
             <app-album-view></app-album-view>
             <app-album-view></app-album-view>
             <app-album-view></app-album-view>

@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { SearchInformationsComponent } from './search-informations/search-informations.component';
 import { AlbumViewComponent } from './album-view/album-view.component';
-
+import { routing } from './app.routing';
+import { ChangePageService } from 'src/services/change-page.service';
+import { SpotifyInformationsService } from 'src/services/spotify-informations.service';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +19,11 @@ import { AlbumViewComponent } from './album-view/album-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    routing,
+    AppRoutingModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ChangePageService, SpotifyInformationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

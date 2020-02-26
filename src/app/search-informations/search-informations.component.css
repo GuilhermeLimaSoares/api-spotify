@@ -37,5 +37,5 @@
 
 .album-view{
     border: 1px solid red;
-    display: flex;
+    /* display: flex; */
 }

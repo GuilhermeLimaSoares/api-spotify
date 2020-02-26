@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ChangePageService } from 'src/services/change-page.service';
 
 @Component({
   selector: 'app-album-detail',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlbumDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private changePage: ChangePageService) { }
 
   ngOnInit() {
+
+  }
+
+  public backHomePage(){
+    this.changePage.isHomePageOpened(true);
   }
 
 }
