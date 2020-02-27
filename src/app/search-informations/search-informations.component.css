@@ -4,15 +4,14 @@
 }
 
 .search-information-input{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .form-group{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .detail-input{
-    border: 1px solid blue;
     display: grid;
     margin: 5% 0% 1% 10%;
     font-size: 14px;
@@ -24,18 +23,58 @@
     font-size: 48px;
     color: #999999;
     font-weight: bold;
+    background-color: #000000;
+    border: none;
+    border-bottom: solid 1px #ffffff
+}
+
+.form-control-filled {
+    width: 80%;
+    margin: 0% 0% 0% 10%;
+    font-size: 48px;
+    color: #fafafa;
+    font-weight: bold;
+    background-color: #000000;
+    border: none;
+    border-bottom: solid 1px #ffffff
 }
 
 .container-search-results{
-    border: 1px solid yellow;
     padding: 0% 10% 0% 10%;
 }
 
 .search-results{
-    border: 1px solid pink;
+    padding: 45px 0px 20px 0px;
 }
 
 .album-view{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* display: flex; */
+}
+
+/* responsive form */
+
+@media only screen and (max-width: 375px) {
+   .main-container{
+   }
+
+   .form-control{
+        width: 75%;
+        font-size: 29px;
+        width: 76%;
+   }
+
+   .form-control-filled{
+    width: 75%;
+    font-size: 29px;
+    width: 76%;
+}
+
+   .search-results{
+    text-align: center;
+   }
+
+   .album-view{
+    text-align: center;
+   }
 }

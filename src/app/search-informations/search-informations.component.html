@@ -3,14 +3,15 @@
         <form>
             <div class="form-group">
                 <label class="detail-input">Busque por artistas, álbuns ou músicas</label>
-                <input type="text" class="form-control" placeholder="Comece a escrever..." [(ngModel)]="value" name="name">
+                <!-- <input type="text" class="form-control" placeholder="Comece a escrever..." [(ngModel)]="value" name="name"> -->
+                <input type="text" [ngClass]="{'form-control': value === undefined, 'form-control-filled': value !== undefined }" placeholder="Comece a escrever..." [(ngModel)]="value" name="name">
             </div>
         </form>
     </div>
     <div class="container-search-results">
 
         <div class="search-results">
-            <p>Resultados encontrados para "Bob"</p>
+            <p>Resultados encontrados para "{{value}}"</p>
         </div>
         <div class="album-view" (click)="getDetails()">
             <app-album-view></app-album-view>
